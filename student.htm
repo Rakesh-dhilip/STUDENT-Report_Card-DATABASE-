@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>LOGIN </title>
+
+</head>
+
+ <style>
+img{
+position:absolute;
+width:30%;
+height:80%;
+top:100px;
+left:150px;
+}
+
+ body {
+  position:absolute;
+  background-repeat: no-repeat;
+
+  margin:0px;
+  padding:0px;
+}
+
+  .box{
+ font-family:Stencil Std, fantasy;
+  width: 30%;
+  height:10%;
+  border: 8px  solid white;
+  position:relative;
+
+ top:130px;
+ left:700px;
+    ;
+   }
+
+  
+
+  .box input:hover{
+  background-color: #000000;
+ }
+ 
+ ::placeholder { 
+  color: red;
+  text-align:center;
+  
+}
+ .box input
+ {
+  background-color: white;
+ border-style: solid;
+  border-width: 9px;
+  width: 90%;
+  padding: 12px 20px;
+  border: black 2px;
+   font-size:15px;color: red;
+    border-radius: 90px 90px;
+  margin: 8px 0;
+  
+  
+font-family:Tahoma, sans-serif;
+  }
+
+  .box button{
+  background-color: orange;
+            border: none;
+            text-decoration: none;
+
+            padding: 20px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+font-family:Stencil Std, fantasy
+
+  }
+
+
+  label{
+  color: white;
+  font-family:Tahoma, sans-serif;
+  font-size:50px;
+ position:absolute;
+ top:20px;
+ left:250px;
+  }
+
+</style>
+<body background="image/drew-beamer-Lhgt4JjW-hs-unsplash.jpg">
+<img src="image/pnghut_student-school-education-learning-logo.png">	
+ <label>ENTER THE STUDENT DETAILS AND MARKS</label>
+<form class="box" action="mark.php"  align="center">
+    
+    <input type="number" placeholder=" STUDENT ID" name="id" required>
+	
+    <input type="text" placeholder="STUDENT NAME" name="name" required>
+<input type="text" placeholder="DOB" name="date" required>
+    <input type="number" placeholder="LANGUAGE MARK " name="lang" required>
+    <input type="number" placeholder="ENGLISH MARK" name="english" required>
+    <input type="number" placeholder="MATHS MARK" name="maths" required>
+    <input type="number" placeholder="SCIENCE MARK" name="science" required>
+    <input type="number" placeholder="SOCIAL MARK" name="social" required>
+
+
+
+
+    <button type ="submit" formaction="mark.php"> SUBMIT THE DATA </button>
+</form>
+
+</body>
+</html>
